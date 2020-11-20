@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--웹서버에 정보를 제출하기 위한 용도<form action="" method="">-->
+    <form action="" method="" name="" novalidate autocomplete="">
+      <!--action : 전송한 정보를 처리할 웹페이지의 url-->
+      <!--method : 서버로 전송할 http 방식(get(기본값), post
+        name:폼의 이름
+        novalidate :데이터 유효성을 검사하지않음
+        autocomplete : 자동완성 (on(기본),off-->
+      <div>
+        <input />
+      </div>
+      <div>
+        <label for="username">이름</label>
+        <input type="text" id="username" />
+      </div>
+
+      <div>
+        <label for="password">비밀번호</label>
+        <input type="password" name="" id="password" />
+      </div>
+      <div>
+        <label for="">성별</label>
+        <!--radid :여러개 선택지 중 하나만 선택하기-->
+        <!--name 속성은 전역 속성 모든 곳에 들어갈수있다.-->
+        <input type="radio" name="gender" id="" />남성
+        <input type="radio" name="gender" id="" />여성
+      </div>
+      <div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div>
+          <select>
+            name="" id="">
+            <option value="bmw">BMW</option>
+            <option value="benz" selected>BENZ</option>
+            <option value="HYUNDAI">현대자동차</option>
+            <option value="KIA">기아자동차</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <!--checkbox 여러개의 선택지를 두고 여러개 선택하기-->
+        <label for="">취미</label>
+        <input type="checkbox" name="hobby" id="" />영화감상
+        <input type="checkbox" name="hobby" id="" />독서
+        <input type="checkbox" name="hobby" id="" />운동
+        <input type="checkbox" name="hobby" id="" />잠자기
+      </div>
+      <input type="button" value="일반버튼" />
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+    </form>
+  </body>
+</html>
